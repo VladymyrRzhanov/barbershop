@@ -42,7 +42,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid tomato;
 }
 
 /* Шапка */
@@ -171,8 +170,6 @@ body {
   left: 100px;
   width: 1125px;
   height: 680px;
-  padding-top: 272px;
-  padding-top: 206px;
   background-color: #323232;
   background-image: linear-gradient(
       0deg,
@@ -302,6 +299,35 @@ body {
   color: var(--accent-color);
 }
 
+.slider-nav {
+  position: absolute;
+  right: 40px;
+  padding-top: 325px;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
+  width: 18px;
+  height: 2px;
+  margin-left: auto;
+  margin-bottom: 12px;
+  background-color: var(--white-color);
+}
+
+.slider-item:nth-child(2),
+.slider-item:nth-child(3) {
+  display: block;
+  width: 8px;
+  height: 2px;
+  margin-left: auto;
+  margin-bottom: 12px;
+  background-color: var(--second-color);
+}
+
+.slider-item:nth-child(3) {
+  margin-bottom: 0;
+}
+
 /* О нас */
 
 .section {
@@ -414,7 +440,7 @@ body {
   background-image: url(../images/uslugi.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .service-subtitle {
@@ -663,6 +689,7 @@ sup {
 
 .connection {
   background-color: #191c26;
+  padding-bottom: 0;
 }
 
 .connection-title {
@@ -694,6 +721,9 @@ sup {
   padding-left: 100px;
   padding-top: 130px;
   background-image: url(../images/Bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .address-phone .connection-title {
@@ -757,11 +787,12 @@ sup {
 
 /* Футер */
 
-footer {
+.footer-section {
   padding-top: 56px;
   padding-bottom: 56px;
   background-color: #f7f7f7;
 }
+
 .footer {
   display: flex;
   align-items: center;
