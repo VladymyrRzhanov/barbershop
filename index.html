@@ -16,7 +16,11 @@
         <header class="header">
             <div class="container main-menu">
                 <nav class="nav-menu">
-                    <a class="logo" href="./index.html"><img src="./images/logo.svg" alt="Логотип" width="69" height="55"></a>
+                    <a class="logo" href="./index.html">
+                        <svg  class="logo-icon" width="69" height="55">
+                            <use href="./images/icons.svg#icon-logo"></use>
+                        </svg>
+                    </a>
                     <ul class="menu-list">
                         <li class="menu-item"><a class="menu-link link" href="">О нас</a></li>
                         <li class="menu-item"><a class="menu-link link" href="">Услуги и цены</a></li>
@@ -108,69 +112,153 @@
 
         <section class="section">
             <div class="container benefits">
-                <ul class="benefits-list">
+                <h2 class="visually-hidden">Преимущества</h2>
+                <ul class="benefits-list first">
                     <li class="benefits-item">
                         <div class="benefits-block">
                             <p class="benefits-figures">600<span class="plus"><sup>+</sup></span></p>
-                            <p class="benefits-subtitle">Довольных клиентов в день</p>
-                        </div>
-                    </li>
-                    <li class="benefits-item">
-                        <div class="benefits-block">
-                            <p class="benefits-figures">50<span class="plus"><sup>+</sup></span></p>
-                            <p class="benefits-subtitle">Наград за отличный сервис</p>
+                            <p class="achievements">Довольных клиентов в день</p>
                         </div>
                     </li>
                     <li class="benefits-item">
                         <div class="benefits-block">
                             <p class="benefits-figures">20<span class="plus"><sup>+</sup></span></p>
-                            <p class="benefits-subtitle">Лучших мастеров Киева</p>
+                            <p class="achievements">Лучших мастеров Киева</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="benefits-list second">
+                    <li class="benefits-item">
+                        <div class="benefits-block">
+                            <p class="benefits-figures">50<span class="plus"><sup>+</sup></span></p>
+                            <p class="achievements">Наград за отличный сервис</p>
                         </div>
                     </li>
                     <li class="benefits-item">
                         <div class="benefits-block">
                             <p class="benefits-figures">100<span class="plus"><sup>+</sup></span></p>
-                            <p class="benefits-subtitle">Подарков постоянным клиентам</p>
+                            <p class="achievements">Подарков постоянным клиентам</p>
                         </div>
                     </li>
                 </ul>
-                <div>
-                    <p>старая традиционная школа</p>
-                    <h2>Почему приходят именно к нам?</h2>
-                    <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
+                <div class="description">
+                    <p class="benefits-subtitle section-subtitle">старая традиционная школа</p>
+                    <h2 class="benefits-title section-title">Почему приходят именно к нам?</h2>
+                    <p class="benefits-text section-text">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
                 </div>
             </div>
         </section>
 
         <!-- Наши мастера -->
 
-        <section class="section">
+        <section class="section masters">
             <div class="container">
-                <p>для настоящих ценителей атмосферы</p>
-                <h2>Наши мастера</h2>
-                <ul>
+                <p class="master-subtitle section-subtitle">для настоящих ценителей атмосферы</p>
+                <h2 class="master-title section-title">Наши мастера</h2>
+                <ul class="master-list">
                     <li>
-                        <img src="./images/master1.jpg" alt="" width="370" height="346">
-                        <h3>John Smith</h3>
-                        <p>Extreme Barber</p>
-                        <ul>
-                            <li></li>
+                        <img class="master-img" src="./images/master1.jpg" alt="" width="370" height="346">
+                        <h3 class="master-name">John Smith</h3>
+                        <p class="master-position">Extreme Barber</p>
+                        <ul class="community-list">
+                            <li class="community-item">
+                                <a class="community-link" href="" rel="noopener noreferrer nofollow">
+                                    <svg class="community-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a class="community-link" href="" rel="noopener noreferrer nofollow">
+                                    <svg class="community-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a class="community-link" href="" rel="noopener noreferrer nofollow">
+                                    <svg class="community-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a class="community-link" href="" rel="noopener noreferrer nofollow">
+                                    <svg class="community-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li>
-                        <img src="./images/master2.jpg" alt="" width="370" height="346">
-                        <h3>Michele Doe</h3>
-                        <p>Extreme Barber</p>
-                        <ul>
-                            <li></li>
+                        <img class="master-img" src="./images/master2.jpg" alt="" width="370" height="346">
+                        <h3 class="master-name">Michele Doe</h3>
+                        <p class="master-position">Extreme Barber</p>
+                        <ul class="community-list">
+                            <li class="community-item">
+                                <a class="community-link" href="" rel="noopener noreferrer nofollow">
+                                    <svg class="community-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a class="community-link" href="" rel="noopener noreferrer nofollow">
+                                    <svg class="community-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a class="community-link" href="" rel="noopener noreferrer nofollow">
+                                    <svg class="community-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a class="community-link" href="" rel="noopener noreferrer nofollow">
+                                    <svg class="community-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li>
-                        <img src="./images/master3.jpg" alt="" width="370" height="346">
-                        <h3>Alan Black</h3>
-                        <p>Extreme Barber</p>
-                        <ul>
-                            <li></li>
+                        <img class="master-img" src="./images/master3.jpg" alt="" width="370" height="346">
+                        <h3 class="master-name">Alan Black</h3>
+                        <p class="master-position">Extreme Barber</p>
+                        <ul class="community-list">
+                            <li class="community-item">
+                                <a class="community-link" href="" rel="noopener noreferrer nofollow">
+                                    <svg class="community-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a class="community-link" href="" rel="noopener noreferrer nofollow">
+                                    <svg class="community-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a class="community-link" href="" rel="noopener noreferrer nofollow">
+                                    <svg class="community-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a class="community-link" href="" rel="noopener noreferrer nofollow">
+                                    <svg class="community-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -181,9 +269,9 @@
 
         <section class="section">
             <div class="container">
-                <h2>Галерея</h2>
-                <p>На латинском языке “барба” означает “борода”</p>
-                <ul>
+                <h2 class="visually-hidden">Галерея</h2>
+                <p class="gallery-subtitle section-subtitle">На латинском языке “барба” означает “борода”</p>
+                <ul class="galleru-list">
                     <li><img src="./images/gallery1.jpg" alt="" width="270" height="360"></li>
                     <li><img src="./images/gallery3.jpg" alt="" width="270" height="360"></li>
                     <li><img src="./images/gallery4.jpg" alt="" width="270" height="360"></li>
@@ -194,21 +282,42 @@
 
         <!-- Контакты -->
         
-        <section class="section">
-            <div class="container">
-                <h2>Контакты</h2>
-                <h3>Онлайн-запись</h3>
-                <button type="button">отправить</button>
-                <h3>Контакты</h3>
-                <address>
-                    <ul>
-                        <li>ул. Васильковая, 7А Киев, 08132</li>
-                        <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-                        <li><a href="mailto:barbershop@email.com">barbershop@email.com</a></li>
-                    </ul>
-                </address>
-                <h4>время работы</h4>
-                <p>Ежедневно с <time>9:00</time> до <time>22:00</time></p>
+        <section class="section connection">
+            <div class="container form-address">
+                <div class="forms">
+                    <h2 class="connection-title section-title">Онлайн-запись</h2>
+                    <button class="button button-text" type="button">отправить</button>
+                </div>
+                <div class="address-phone">
+                    <h2 class="connection-title section-title">Контакты</h2>
+                    <address class="address">
+                        <ul class="address-list">
+                            <li class="address-item">
+                                <a class="map address-link" href="">
+                                    <svg class="address-icon" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-map"></use>
+                                    </svg>ул. Васильковая, 7А Киев, 08132
+                                </a>
+                            </li>
+                            <li class="address-item">
+                                <a class="address-link" href="tel:+380441111111">
+                                    <svg class="address-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-phone"></use>
+                                    </svg>+38 044 111 11 11
+                                </a>
+                            </li>
+                            <li class="address-item">
+                                <a class="address-link" href="mailto:barbershop@email.com">
+                                    <svg class="address-icon" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-mail"></use>
+                                    </svg>barbershop@email.com
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                    <h4 class="worktime section-subtitle">время работы</h4>
+                    <p class="worktime-text section-text">Ежедневно с <time>9:00</time> до <time>22:00</time></p>
+                </div>
             </div>
         </section>
 
@@ -216,7 +325,7 @@
 
         <footer>
             <div class="container footer">
-                <p>&copy; Copyright 2020</p>
+                <p class="footer-subtitle section-subtitle">&copy; Copyright 2020</p>
                 <ul class="social-list">
                     <li class="social-item"></li>
                     <li class="social-item"><a class="social-link section-subtitle" href=""
