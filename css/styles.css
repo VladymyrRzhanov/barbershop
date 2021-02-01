@@ -42,13 +42,17 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  outline: 1px solid tomato;
 }
 
 /* Шапка */
 
 .header {
-  position: relative;
+  position: absolute;
   z-index: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .main-menu {
@@ -161,12 +165,11 @@ body {
 
 .hero {
   position: relative;
-  height: 560px;
+  height: 680px;
 }
 
 .slider {
   position: absolute;
-  top: -120px;
   left: 100px;
   width: 1125px;
   height: 680px;
