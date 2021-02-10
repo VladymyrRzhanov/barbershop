@@ -49,7 +49,6 @@ img {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid tomato;
 }
 
 /* Шапка */
@@ -741,6 +740,8 @@ sup {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  transition: border-bottom var(--transition-duration) var(--transition-timing-function);
+  cursor: pointer;
 }
 
 .input::placeholder {
@@ -750,6 +751,7 @@ sup {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .input-name {
@@ -765,9 +767,16 @@ sup {
   resize: none;
   height: 76px;
 }
-.input-name:hover, .input-name:focus {
+
+
+.label:hover .input::placeholder, .label:focus .input::placeholder {
   color: var(--white-color);
 }
+
+.label:hover .input, .label:focus .input {
+  border-color: var(--white-color);
+}
+
 
 .form-container {
   display: flex;
@@ -781,6 +790,7 @@ sup {
 }
 
 .connection .button-text {
+  padding: 12px 38px;
   color: var(--white-color);
 }
 
