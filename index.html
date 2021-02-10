@@ -15,53 +15,55 @@
         <!-- Шапка -->
         <header class="header">
             <div class="container main-menu">
-                <nav class="nav-menu">
-                    <a class="logo" href="./index.html" aria-label="Логотип">
-                        <svg  class="logo-icon" width="69" height="55">
-                            <use href="./images/icons.svg#icon-logo"></use>
-                        </svg>
-                    </a>
-                    <ul class="menu-list">
-                        <li class="menu-item"><a class="menu-link link" href="">О нас</a></li>
-                        <li class="menu-item"><a class="menu-link link" href="">Услуги и цены</a></li>
-                        <li class="menu-item"><a class="menu-link link" href="">Мастера</a></li>
-                        <li class="menu-item"><a class="menu-link link" href="">Контакты</a></li>
-                    </ul>
-                </nav>
+              <a class="logo" href="./index.html" aria-label="Логотип">
+                <svg  class="logo-icon" width="69" height="55">
+                  <use href="./images/icons.svg#icon-logo"></use>
+                </svg>
+              </a>
+              <nav class="nav-menu">
+                <ul class="menu-list">
+                  <li class="menu-item"><a class="menu-link link" href="">О нас</a></li>
+                  <li class="menu-item"><a class="menu-link link" href="">Услуги и цены</a></li>
+                  <li class="menu-item"><a class="menu-link link" href="">Мастера</a></li>
+                  <li class="menu-item"><a class="menu-link link" href="">Контакты</a></li>
+                </ul>
                 <div class="contacts">
-                    <a class="menu-link link" href="tel:+380441111111">+38 044 111 11 11</a>
-                    <button class="menu-link button" type="button">Онлайн-запись</button>
+                  <a class="menu-link link" href="tel:+380441111111">+38 044 111 11 11</a>
+                  <button class="menu-link button" type="button">Онлайн-запись</button>
                 </div>
+                <ul class="social-list social-list--vertical">
+                  <li class="social-item"></li>
+                  <li class="social-item"><a class="social-link section-subtitle" href=""
+                          rel="noopener noreferrer nofollow">Instagram</a></li>
+                  <li class="social-item"><a class="social-link section-subtitle" href=""
+                          rel="noopener noreferrer nofollow">Youtube</a></li>
+                </ul>
+              </nav>
             </div>
-        </header>
-
+          </header>
+        
         <!-- Герой -->
         
         <section>
-            <div class="container hero">
-                <ul class="social-list">
-                    <li class="social-item"></li>
-                    <li class="social-item"><a class="social-link section-subtitle" href=""
-                            rel="noopener noreferrer nofollow">Instagram</a></li>
-                    <li class="social-item"><a class="social-link section-subtitle" href=""
-                            rel="noopener noreferrer nofollow">Youtube</a></li>
-                </ul>
-                <div class="slider">
-                    <div class="hero-content">
-                        <h1 class="hero-title section-subtitle" lang="en">A hair salon for men in Kyiv</h1>
-                        <h2 class="hero-subtitle">BarberShop</h2>
-                        <p class="hero-text section-text">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
-                    </div>
-                    <ul class="slider-controls">
-                        <li class="controls-item section-subtitle">Назад</li>
-                        <li class="controls-item section-subtitle">Вперед</li>
-                    </ul>
-                    <ul class="slider-nav">
-                        <li class="slider-item"></li>
-                        <li class="slider-item"></li>
-                        <li class="slider-item"></li>
-                    </ul>
+            <div class="container">
+              <div class="hero">
+                <div class="hero-content">
+                  <div class="hero-heading">
+                    <h1 class="hero-title section-subtitle" lang="en">A hair salon for men in Kyiv</h1>
+                    <h2 class="hero-subtitle">BarberShop</h2>
+                    <p class="hero-text section-text">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+                  </div>
+                  <ul class="slider-nav">
+                    <li class="slider-item"></li>
+                    <li class="slider-item"></li>
+                    <li class="slider-item"></li>
+                  </ul>
                 </div>
+                <ul class="slider-controls">
+                  <li class="controls-item section-subtitle">Назад</li>
+                  <li class="controls-item section-subtitle">Вперед</li>
+                </ul>
+              </div>
             </div>
         </section>
 
@@ -291,18 +293,18 @@
             <div class="container form-address">
                 <div class="forms">
                     <h2 class="connection-title section-title">Онлайн-запись</h2>
-                    <form>
+                    <form class="form-send">
                         <div class="form-container">
                             <label class="input-name">
                                 <input class="input" type="text" name="name" placeholder="Имя*">
                             </label>
-                            <label class="input input-phone">
+                            <label class="input-phone">
                                 <input class="input" name="telephone" placeholder="Телефон*">
                             </label>
-                            <label>
+                        </div>
+                            <label class="message">
                                 <textarea class="input input-message" name="message" placeholder="сообщение"></textarea>
                             </label>
-                        </div>
                         <button class="button button-text" type="button">отправить</button>
                     </form>
                 </div>

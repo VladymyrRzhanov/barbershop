@@ -37,12 +37,19 @@ body {
   font-style: normal;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  outline: 1px solid tomato;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid tomato;
 }
 
 /* Шапка */
@@ -56,13 +63,19 @@ body {
 }
 
 .main-menu {
-  padding-top: 40px;
+  position: relative;
+  height: 680px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 32px;
 }
 
 .nav-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-grow: 1;
 }
 
 .logo {
@@ -98,11 +111,7 @@ body {
   opacity: 1;
 }
 
-.main-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 .link {
   display: inline-block;
@@ -135,6 +144,13 @@ body {
     var(--transition-timing-function);
 }
 
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
 .contacts .menu-link {
   margin-right: 40px;
 }
@@ -163,35 +179,35 @@ body {
 
 /* Герой */
 
+/* .hero {
+  height: 680px;
+} */
+
 .hero {
   position: relative;
-  height: 680px;
-}
-
-.slider {
-  position: absolute;
+  top: 0;
   left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 1125px;
   height: 680px;
-  background-color: #323232;
-  background-image: linear-gradient(
-      0deg,
-      rgba(25, 28, 38, 0.2),
-      rgba(25, 28, 38, 0.2)
-    ),
-    url(../images/slider1.jpg);
+  padding: 272px 55px 49px 100px;
+  background-color: #c4c4c4;
+  background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/slider1.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .hero-content {
-  width: 500px;
-  padding-left: 100px;
-  padding-bottom: 206px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-heading {
+  width: 486px;
 }
 
 .hero-title {
@@ -224,10 +240,8 @@ body {
 }
 
 .slider-controls {
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
   display: flex;
+  justify-content: flex-end;
   color: #fff;
 }
 
@@ -264,18 +278,20 @@ body {
   background-color: var(--white-color);
 }
 
+
 .social-list {
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 
-.hero .social-list {
+.social-list--vertical {
   transform: rotate(-90deg);
   position: absolute;
   bottom: 40px;
   left: 50px;
   transform-origin: center left;
 }
+
 .social-item {
   margin-right: 40px;
 }
@@ -303,9 +319,6 @@ body {
 }
 
 .slider-nav {
-  position: absolute;
-  right: 40px;
-  padding-top: 325px;
 }
 
 .slider-item:nth-child(1) {
@@ -692,7 +705,6 @@ sup {
 
 .connection {
   background-color: #191c26;
-  padding-bottom: 0;
 }
 
 .connection-title {
@@ -701,10 +713,21 @@ sup {
 
 .form-address {
   position: relative;
-  height: 514px;
+  height: 384px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+}
+
+.forms {
+  flex-basis: 600px;
+}
+
+.form-send {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  align-items: flex-start;
 }
 
 .forms .connection-title {
@@ -712,40 +735,49 @@ sup {
 }
 
 .input {
+  width: 100%;
+  height: 24px;
+  padding-bottom: 8px;
   background-color: transparent;
   border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
 }
 
 .input::placeholder {
-  margin-bottom: 8px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
 }
 
 .input-name {
-  width: 270px;
-  height: 24px;
+  width: 100%;
+  margin-right: 30px;
 }
 
 .input-phone {
-  width: 260px;
-  height: 24px;
+  width: 100%;
 }
 
 .input-message {
   resize: none;
-  width: 560px;
+  height: 76px;
+}
+.input-name:hover, .input-name:focus {
+  color: var(--white-color);
 }
 
 .form-container {
   display: flex;
-  flex-wrap: wrap;
-  width: 560px;
+  width: 100%;
+  margin-bottom: 44px;
+}
+
+.message {
+  width: 100%;
+  margin-bottom: 44px;
 }
 
 .connection .button-text {
@@ -755,11 +787,12 @@ sup {
 .address-phone {
   position: absolute;
   top: -130px;
-  right: 0;
+  right: -55px;
   width: 625px;
   height: 644px;
   padding-left: 100px;
   padding-top: 130px;
+  padding-bottom: 130px;
   background-image: url(../images/Bg.png);
   background-position: center;
   background-repeat: no-repeat;
