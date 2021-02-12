@@ -376,7 +376,7 @@ img {
 
 /* Услуги и цены */
 
-.service {
+.service__section {
   background-color: #111319;
   background-image: url(../images/uslugi.png);
   background-position: center;
@@ -384,18 +384,16 @@ img {
   background-size: contain;
 }
 
-.service-subtitle {
-  display: flex;
-  align-items: center;
+.service__section-subtitle {
   margin-bottom: 20px;
   color: rgba(157, 164, 189, 0.6);
 }
 
-.service-subtitle::before {
+.service__section-subtitle::before {
   background-color: rgba(157, 164, 189, 0.6);
 }
 
-.service-title {
+.service__section-title {
   margin-bottom: 44px;
   color: var(--white-color);
 }
@@ -407,39 +405,32 @@ img {
   margin-bottom: 50px;
 }
 
-.service-text {
+.service__section-text {
   color: var(--second-color);
 }
 
-.service-block .first,
-.service-block .second {
+.service-block__bg {
   width: 585px;
   padding: 30px 40px;
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
-.service-block .first {
+.service-block__bg:first-child {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
-.service-block .second {
-  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
-}
-
-.service-item {
+.service-block__item {
   align-items: baseline;
   /* Выравниваем текст */
   display: flex;
   /* Включаем флексы */
+}
+
+.service-block__item--bottom:not(:last-child) {
   margin-bottom: 20px;
-  /* Отступ снизу */
 }
 
-.service-item:last-child {
-  margin-bottom: 0;
-}
-
-.service-item::before {
+.service-block__item::before {
   content: "";
   /* Выводим линию */
   border-bottom: 1px solid rgba(157, 164, 189, 0.12);
@@ -452,12 +443,12 @@ img {
   /* Расстояние от текста */
 }
 
-.service-value {
+.service-block__value {
   order: 3;
   /* Выводим третьим */
 }
 
-.service .button-text {
+.service-block__button {
   display: block;
   margin: 0 auto;
   color: var(--white-color);
@@ -465,36 +456,36 @@ img {
 
 /* Преимущества */
 
-.benefits {
+.benefits__container {
   display: flex;
   justify-content: center;
 }
 
-.benefits-list.first {
+.benefits-list--left {
   margin-right: 30px;
 }
 
-.benefits-list.second {
+.benefits-list--right {
   margin-right: 130px;
   padding-top: 26px;
 }
 
-.benefits-item {
+.benefits-list__item {
   margin-bottom: 30px;
   width: 170px;
   height: 133px;
 }
 
-.benefits-item:last-child {
+.benefits-list__item:last-child {
   margin-bottom: 0;
 }
 
-.benefits-block {
+.progress-block {
   padding: 20px 20px;
   background-color: #f7f7f7;
 }
 
-.benefits-figures {
+.progress-block__figures {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
@@ -502,7 +493,11 @@ img {
   letter-spacing: 0.05em;
   color: var(--title-color);
 }
-.benefits-figures .plus {
+
+.progress-block__cross {
+  position: relative;
+  top: -20px;
+  left: 2px;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.37;
@@ -510,11 +505,8 @@ img {
   text-align: center;
   color: var(--accent-color);
 }
-sup {
-  top: -1.8em;
-}
 
-.achievements {
+.progress-block__achievements {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -528,6 +520,7 @@ sup {
   align-items: center;
   margin-bottom: 0;
 }
+
 /* Наши мастера */
 
 .masters {
