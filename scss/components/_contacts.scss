@@ -1,0 +1,20 @@
+.contacts__section {
+  background-color: #191c26;
+}
+
+.contacts__container {
+  position: relative;
+  height: 384px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.contacts__form {
+  flex-basis: 600px;
+}
+
+.connection__section-title {
+  margin-bottom: 44px;
+  color: $white-color;
+}

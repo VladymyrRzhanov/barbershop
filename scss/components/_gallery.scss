@@ -1,0 +1,13 @@
+.gallery__section-subtitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 44px;
+}
+
+.gallery__section-subtitle::before {
+  background-color: $title-color;
+}
+
+.gallery__list {
+  justify-content: space-between;
+}

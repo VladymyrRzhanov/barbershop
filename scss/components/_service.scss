@@ -1,0 +1,71 @@
+.service__section {
+  background-color: #111319;
+  background-image: url(../images/uslugi.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.service__section-subtitle {
+  margin-bottom: 20px;
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.service__section-subtitle::before {
+  background: rgba(157, 164, 189, 0.6);
+}
+
+.service__section-title {
+  margin-bottom: 44px;
+  color: $white-color;
+}
+
+.service-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.service__section-text {
+  color: $second-color;
+}
+
+.service-block__bg {
+  width: 585px;
+  padding: 30px 40px;
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.service-block__bg:first-child {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.service-block__item {
+  align-items: baseline;
+  /* Выравниваем текст */
+  display: flex;
+  /* Включаем флексы */
+}
+
+.service-block__item--bottom:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.service-block__item::before {
+  content: "";
+  /* Выводим линию */
+  border-bottom: 1px solid rgba(157, 164, 189, 0.12);
+  /* Параметры линии */
+  flex-grow: 1;
+  /* Линия занимает всё доступное пространство */
+  order: 2;
+  /* Выводим вторым */
+  margin: 0 5px;
+  /* Расстояние от текста */
+}
+
+.service-block__value {
+  order: 3;
+  /* Выводим третьим */
+}

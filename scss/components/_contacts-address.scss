@@ -1,0 +1,74 @@
+.contacts__address-phone {
+  position: absolute;
+  top: -130px;
+  left: 615px;
+  width: 625px;
+  height: 644px;
+  padding-left: 100px;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-image: url(../images/Bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.address-phone__section-title {
+  margin-bottom: 40px;
+  color: $white-color;
+}
+
+.address {
+  width: 270px;
+  margin-bottom: 70px;
+}
+
+.address-list__item {
+  margin-bottom: 20px;
+}
+
+.address-list__item:last-child {
+  margin-bottom: 0;
+  text-decoration-line: underline;
+}
+
+.worktime__section-subtitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: $white-color;
+}
+
+.worktime__section-subtitle::before {
+  background: $opacity-color;
+}
+
+.worktime__section-text {
+  color: $second-color;
+}
+
+.address-list__icon {
+  margin-right: 16px;
+}
+
+.address-list__link {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: $second-color;
+  stroke: $second-color;
+  fill: transparent;
+}
+
+.address-list__link--higher {
+  align-items: flex-start;
+}
+
+.address-list__link:hover,
+.address-list__link:focus {
+  color: $accent-color;
+  stroke: $accent-color;
+}

@@ -1,0 +1,67 @@
+.masters__section {
+  background-color: #f7f7f7;
+}
+
+.masters__section-subtitle {
+  margin-bottom: 20px;
+}
+
+.masters__section-subtitle::before {
+  border-color: $title-color;
+}
+
+.masters__section-title {
+  margin-bottom: 44px;
+}
+
+.masters-list {
+  justify-content: space-between;
+}
+
+.barber__image {
+  margin-bottom: 20px;
+}
+
+.barber__name {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: $title-color;
+}
+
+.barber__position {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: $accent-color;
+}
+
+.community-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $white-color;
+}
+
+.community-list__item:last-child {
+  margin-right: 0;
+}
+
+.community-list__link {
+  fill: $title-color;
+}
+
+.community-list__link:hover,
+.community-list__link:focus {
+  fill: $accent-color;
+}

@@ -1,0 +1,24 @@
+.header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.header__container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+.logo {
+  margin-right: 71px;
+}
+
+.logo:hover,
+.logo:focus {
+  fill: $accent-color;
+}

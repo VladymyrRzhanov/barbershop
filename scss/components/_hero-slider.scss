@@ -1,0 +1,36 @@
+.slider-controls {
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+}
+
+.slider-controls__item--left {
+  position: relative;
+  margin-right: 48px;
+  text-align: left;
+  color: $opacity-color;
+}
+
+.slider-controls__item--right {
+  position: relative;
+  text-align: right;
+  color: $white-color;
+}
+
+.slider-controls__item::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 60px;
+  height: 1px;
+}
+
+.slider-controls__item--left::after {
+  left: 0;
+  background-color: $opacity-color;
+}
+
+.slider-controls__item--right::after {
+  right: 0;
+  background-color: $white-color;
+}

@@ -1,0 +1,35 @@
+.about-us__container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image-list {
+  margin-right: 64px;
+}
+
+.image-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.description {
+  width: 500px;
+}
+
+.description__section-subtitle {
+  margin-bottom: 20px;
+  color: $title-color;
+}
+
+.description__section-title,
+.benefits__section-title {
+  margin-bottom: 20px;
+}
+
+.description__section-text {
+  margin-bottom: 20px;
+  color: $main-color;
+}
+
+.description__section-subtext {
+  margin-bottom: 40px;
+}

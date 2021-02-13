@@ -1,0 +1,16 @@
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  background-color: #f7f7f7;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__section-subtitle {
+  letter-spacing: 0.2em;
+  color: $second-color;
+}
