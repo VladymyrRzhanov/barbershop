@@ -87,7 +87,7 @@ img {
 .list--vertical {
   transform: rotate(-90deg);
   position: absolute;
-  bottom: 40px;
+  top: 630px;
   left: 50px;
   transform-origin: center left;
 }
@@ -223,7 +223,6 @@ img {
 
 .header__container {
   position: relative;
-  height: 680px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
