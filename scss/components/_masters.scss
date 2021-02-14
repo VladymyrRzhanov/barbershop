@@ -42,22 +42,18 @@
   color: $accent-color;
 }
 
-.community-list__item {
+.community-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.community-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: $white-color;
-}
-
-.community-list__item:last-child {
-  margin-right: 0;
-}
-
-.community-list__link {
   fill: $title-color;
 }
 
