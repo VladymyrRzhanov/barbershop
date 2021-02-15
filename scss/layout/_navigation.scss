@@ -1,14 +1,12 @@
 .nav-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex;
   flex-grow: 1;
 }
 
 .social-link {
   letter-spacing: 0.1em;
   color: $title-color;
-  transition: color $transition-duration$transition-timing-function;
+  @include transition(color);
 }
 
 .social-link:hover,

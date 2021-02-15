@@ -1,8 +1,7 @@
 .contact-form {
-  display: flex;
+  @include flex($align-items: flex-start);
   flex-direction: column;
   margin-right: 40px;
-  align-items: flex-start;
 }
 
 .forms .connection-title {
@@ -16,18 +15,15 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-  transition: border-bottom $transition-duration$transition-timing-function;
+  @include transition(border-bottom);
   cursor: pointer;
 }
 
 .contact-form__input::placeholder {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
+  @include font(600,11px,1.36,0.1em);
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
-  transition: color $transition-duration$transition-timing-function;
+  @include transition(color);
 }
 
 .contact-form__label {
@@ -58,7 +54,7 @@
 }
 
 .contact-form__container {
-  display: flex;
+  @include flex;
   width: 100%;
   margin-bottom: 44px;
 }

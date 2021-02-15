@@ -8,9 +8,7 @@
 
 .header__container {
   position: relative;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  @include flex($align-items:flex-start,$justify-content:space-between);
   padding-top: 32px;
 }
 

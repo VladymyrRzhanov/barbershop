@@ -7,12 +7,11 @@
 }
 
 .service__section-subtitle {
-  margin-bottom: 20px;
-  color: rgba(157, 164, 189, 0.6);
+  color: $opacity-color;
 }
 
 .service__section-subtitle::before {
-  background: rgba(157, 164, 189, 0.6);
+  background: $opacity-color;
 }
 
 .service__section-title {
@@ -21,9 +20,7 @@
 }
 
 .service-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex;
   margin-bottom: 50px;
 }
 
@@ -42,10 +39,7 @@
 }
 
 .service-block__item {
-  align-items: baseline;
-  /* Выравниваем текст */
-  display: flex;
-  /* Включаем флексы */
+  @include flex($align-items: baseline);
 }
 
 .service-block__item--bottom:not(:last-child) {

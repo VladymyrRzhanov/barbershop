@@ -9,16 +9,13 @@
 .button {
   display: block;
   padding: 12px 20px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
+  @include font(600,12px,1.33,0.09em);
   text-transform: uppercase;
 
   background-color: transparent;
   border: 1px solid $accent-color;
   border-radius: 25px;
-  transition: background-color $transition-duration$transition-timing-function;
+  @include transition(background-color);
   cursor: pointer;
   color: $white-color;
 }

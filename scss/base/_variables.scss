@@ -9,3 +9,7 @@ $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 $title-font: "Raleway";
 $main-font: "Open Sans";
+
+
+
+$changes: $transition-duration $transition-timing-function;

@@ -1,6 +1,5 @@
 .benefits__container {
-  display: flex;
-  justify-content: center;
+  @include flex($align-items: flex-start,$justify-content:center);
 }
 
 .benefits-list--left {
@@ -28,11 +27,8 @@
 }
 
 .progress-block__figures {
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.36;
+  @include font(700,42px,1.36,0.05em);
   text-align: center;
-  letter-spacing: 0.05em;
   color: $title-color;
 }
 
@@ -40,25 +36,13 @@
   position: relative;
   top: -20px;
   left: 2px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.37;
-
+  @include font(600,16px,1.37,unset);
   text-align: center;
   color: $accent-color;
 }
 
 .progress-block__achievements {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
+  @include font(600,11px,1.36,unset);
   text-align: center;
-
   color: $title-color;
-}
-
-.benefits-subtitle {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0;
 }

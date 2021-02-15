@@ -1,6 +1,5 @@
 .about-us__container {
-  display: flex;
-  align-items: flex-start;
+  @include flex($align-items:flex-start, $justify-content:flex-start);
 }
 
 .image-list {
@@ -13,16 +12,6 @@
 
 .description {
   width: 500px;
-}
-
-.description__section-subtitle {
-  margin-bottom: 20px;
-  color: $title-color;
-}
-
-.description__section-title,
-.benefits__section-title {
-  margin-bottom: 20px;
 }
 
 .description__section-text {

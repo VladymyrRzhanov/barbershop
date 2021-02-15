@@ -2,9 +2,8 @@
   position: relative;
   top: 0;
   left: 100px;
-  display: flex;
+  @include flex($align-items: unset,$justify-content: space-between);
   flex-direction: column;
-  justify-content: space-between;
   width: 1125px;
   height: 680px;
   padding: 272px 55px 49px 100px;
@@ -21,9 +20,7 @@
 }
 
 .hero__content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex($justify-content: space-between);
 }
 
 .hero__heading {
@@ -31,7 +28,6 @@
 }
 
 .hero__section-subtitle {
-  margin-bottom: 20px;
   color: $opacity-color;
 }
 
@@ -40,11 +36,7 @@
 }
 
 .hero__title {
-  margin-bottom: 20px;
   font-family: $title-font;
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 1.18;
-  letter-spacing: 0.05em;
+  @include font(700,72px,1.18,0.05em);
   color: $white-color;
 }

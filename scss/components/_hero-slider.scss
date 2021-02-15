@@ -1,6 +1,5 @@
 .slider-controls {
-  display: flex;
-  justify-content: flex-end;
+  @include flex($justify-content: flex-end);
   color: #fff;
 }
 

@@ -33,8 +33,7 @@
 }
 
 .worktime__section-subtitle {
-  display: flex;
-  align-items: center;
+  @include flex($justify-content: flex-start);
   margin-bottom: 20px;
   color: $white-color;
 }
@@ -52,12 +51,9 @@
 }
 
 .address-list__link {
-  display: flex;
-  align-items: center;
+  @include flex($justify-content: flex-start);
+  @include font-shs(18px,1.67,0.02em);
   font-style: normal;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
   color: $second-color;
   stroke: $second-color;
   fill: transparent;

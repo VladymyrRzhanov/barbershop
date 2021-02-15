@@ -1,7 +1,5 @@
 .list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex;
 }
 
 .list--dextral {
@@ -29,11 +27,7 @@
 
 .list__link {
   position: relative;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-
+  @include font(600,12px,1.33,0.1em);
   color: $white-color;
 }
 
@@ -41,7 +35,7 @@
   display: inline-block;
   padding-top: 16px;
   padding-bottom: 16px;
-  transition: color $transition-duration$transition-timing-function;
+  @include transition(color);
 }
 
 .list__link--right {
@@ -58,7 +52,7 @@
   background-color: $accent-color;
   border-radius: 2px;
   opacity: 0;
-  transition: opacity $transition-duration$transition-timing-function;
+  @include transition(opacity);
 }
 
 .list__link--view:hover,

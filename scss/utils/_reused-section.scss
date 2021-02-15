@@ -5,12 +5,12 @@
 
 .section-title {
   font-family: $title-font, sans-serif;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
-
+  @include font(700,42px,1.16,0.05em);
   color: $title-color;
+}
+
+.section-title--bottom {
+  margin-bottom: 20px;
 }
 
 .section-title--visually-hidden {
@@ -22,13 +22,14 @@
 }
 
 .section-subtitle {
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
+  @include flex($justify-content: flex-start);
+  @include font(600,11px,1.36,0.1em);
   text-transform: uppercase;
+  color: $title-color;
+}
+
+.section-subtitle--bottom {
+  margin-bottom: 20px;
 }
 
 .section-subtitle--linear::before {
@@ -40,9 +41,7 @@
 }
 
 .section-text {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+  @include font-shs(18px,1.67,0.02em);
 }
 
 .section-text--grey {
@@ -50,9 +49,6 @@
 }
 
 .section-subtext {
-  font-size: 14px;
-  line-height: 1.86;
-  letter-spacing: 0.02em;
-
+  @include font-shs(14px,1.86,0.02em);
   color: $main-color;
 }
